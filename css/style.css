@@ -56,6 +56,11 @@ header>ul li:hover {
   margin-bottom: 100px;
 }
 
+.bienvenue {
+  display: flex; 
+  align-items: center;
+} 
+
 .bienvenue>img {
   width: 500px;
   align-self: center;
@@ -65,6 +70,7 @@ header>ul li:hover {
 .bienvenue>.texte {
   width: 500px;
   margin-left: 20px;
+  flex-grow: 1;
 }
 
 .texte p {
@@ -153,6 +159,10 @@ label {
   display: block;
 }
 
+textarea {
+  height: 150px;
+}
+
 .form-right * {
   display: block;
 }
@@ -176,3 +186,36 @@ label {
   transform: translateY(-5px);
 }
 
+.commentaire {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.commentaire-pp {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.commentaire-text {
+  margin-left: 20px;
+}
+
+.commentaire-text p {
+  text-align: justify;
+}
+
+footer {
+  height: 80px;
+  position: relative;
+  background-color: #ff6262;
+}
+
+footer h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
