@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: #ff6262;
+  position: relative;
+  height: 80px;
+  top: 0;
+}
+
+header>* {  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 30px 0 30px;
+}
+
+header img {
+  width: 50px;
+}
+
+header>ul {
+  right: 0;
+  text-decoration: none;
+}
+
+header, header a {
+  color: #ffffff;
+}
+
+header a:nth-child(2) {
+font-size: 20px;
+font-weight: 600;
+margin-left: 100px;
+}
+
+header>ul li {
+  margin: 10px;
+  font-weight: 600;
+  display: inline-block;
+  list-style: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+header>ul li:hover {
+  background-color: rgba(0, 0, 0,0.1);
+}
+
+.page-main {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.bienvenue>img {
+  width: 500px;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.bienvenue>.texte {
+  width: 500px;
+  margin-left: 20px;
+}
+
+.texte p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+.separator {
+  height: 3px;
+  background-color: #ff6262;
+  width: 100%;
+  margin: 20px 0;  
+}
+
+.a-propos {
+  margin-bottom: 100px;
+}
+
+.title-category {
+  text-align: center;
+}
+
+.picture-propos {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/team.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  position: relative;
+}
+
+.infos-picture-propos {
+  width: 100%;
+  height: 100%;
+  z-index:2;
+  color:white;
+  border-radius: 5px;
+}
+
+.picture-propos-text {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+}
+
+.picture-propos-text p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.picture-propos-text h3 {
+  font-size: 30px;
+}
+
+input:not(input[type="submit"]), textarea {
+  border: none;
+  border-bottom: 2px solid #ff6262;
+  resize: none;
+  outline: none;
+  width: 30vw;
+  margin-bottom: 20px;
+  font-size: 20px;  
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.form-top {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-left>div * {
+  display: block;
+}
+
+.form-right * {
+  display: block;
+}
+
+.form-contact input[type="submit"] {
+  background-color: #ff6262;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  font-family: "Montserrat";
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  margin-bottom: 80px;
+  cursor : pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+.form-contact input[type="submit"]:hover {
+  transform: translateY(-5px);
+}
+
